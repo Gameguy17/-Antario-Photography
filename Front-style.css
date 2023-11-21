@@ -1,0 +1,256 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body, html {
+    background-color: blanchedalmond;
+    height: 100%;
+    margin: 0;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+ .navbar{
+    list-style-type: none;
+    overflow: hidden;
+ }
+ .navbar li{
+    float: left;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ h1{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ h2{
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .navbar a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+ }
+.carousel{
+   width: 100vw;
+   height: 100vh;
+   position: relative; 
+}
+.carousel > ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+.slide > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+.slide[data-active]{
+    opacity: 1;
+}
+.carousel-button{
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgb(0, 0, 0, .1);
+}
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+.carousel-button:focus{
+    outline: 1px solid black;
+}
+.carousel-button.prev{
+    left: 1rem;
+}
+.carousel-button.next{
+    right: 1rem;
+}
+.about-Me{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20%;
+    
+}
+.about-p{
+    display: flex;
+    align-items: center;
+    width: 470px;
+    font-size: 30px;
+    margin-left: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+.mario-Family{
+    height: 600px;
+    width: 800px;
+    object-fit: cover;
+    border-style: solid;
+}
+.navbar-2{
+    display: flex;
+    
+}
+.navbar-2 li{
+    list-style-type: none;
+}
+svg{
+    width: 50px;
+    margin: 2px;
+
+}
+.Gallery li{
+    list-style-type: none;
+}
+.Gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Gallery img{
+    width: 900px;
+    height: 1200px;
+    object-fit: cover;
+    object-position: center;
+    border-style: solid;
+}
+.background{
+    background-image: url(Mario-Photos/Mario-Jpan.jfif);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+span{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    display: block;
+    justify-content: center;
+    width: 500px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+}
+.btn{
+    display: block;
+    width: 100%;
+    font-size: 1.25rem;
+    border-radius: 2px solid #121212;
+    padding: 5px;
+    cursor: pointer;
+}
+textarea{
+    height: auto;
+    resize: vertical;
+    font-family: inherit ;
+}
+.form-control{
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid #121212;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+.form-row{
+    display: flex;
+}
+@media screen and (max-width: 768px) {
+    .about-Me{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .carousel{
+        width: 95vw;
+        height: 45vh;
+        position: relative; 
+     }
+    .about-p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
+    .Gallery{
+    width: 700px;
+    height: 900px;
+    object-fit: cover;
+    object-position: center;
+    border-style: solid;
+    }
+    .slide > img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+@media screen and (max-width: 600px){
+    .navbar{
+        display: block;
+        text-align: center;
+        
+    }
+    .carousel{
+        width: 100%;
+        height: 25vh;
+        position: relative; 
+     }
+    .mario-Family{
+        width: 408px;
+        height: 311px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .about-p{
+        font-size: 25px;
+        width: 397px;
+    }
+    .Gallery{
+        display: flex;
+        justify-content: center;
+       width: auto;
+        height: auto;
+    }
+    .background{
+        height: 100vh;
+    }
+    .container{
+        display: flex;
+        width: 50vh;
+    }
+}
