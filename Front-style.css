@@ -192,8 +192,8 @@ textarea{
         flex-direction: column-reverse;
     }
     .carousel{
-        width: 100vw;
-        height: 45vh;
+        width: 105vw;
+        height: 47vh;
         position: relative; 
      }
     .about-p{
@@ -271,7 +271,7 @@ textarea{
     } 
     .carousel{
         width: 425px;
-        height: 25vh;
+        height: 26vh;
         position: relative; 
      }
      .mario-Family{
@@ -296,7 +296,7 @@ textarea{
     } 
     .carousel{
         width: 430px;
-        height: 22vh;
+        height: 23vh;
         position: relative; 
      }
      .mario-Family{
@@ -320,7 +320,7 @@ textarea{
 @media screen and (max-width: 375px) {
     .carousel{
         width: 375px;
-        height: 22vh;
+        height: 23vh;
         position: relative; 
      }
      .mario-Family{
@@ -334,4 +334,37 @@ textarea{
         width: 350px;
         margin-left: 25px;
     } 
+}
+@media screen and (max-width: 320px) {
+    h1{
+       font-size: 25px;
+    }
+    .carousel{
+        width: 358px;
+        height: 23vh;
+        position: relative; 
+     }
+     .mario-Family{
+        width: 358px;
+        height: 267px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .about-p{
+        font-size: 21px;
+        width: 313px;
+        margin-left: 38px;
+    } 
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container{
+        display: flex;
+        width: 38vh;
+    }
+    
 }
