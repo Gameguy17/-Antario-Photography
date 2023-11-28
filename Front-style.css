@@ -317,3 +317,21 @@ textarea{
         width: 45vh;
     }
 }
+@media screen and (max-width: 375px) {
+    .carousel{
+        width: 375px;
+        height: 22vh;
+        position: relative; 
+     }
+     .mario-Family{
+        width: 375px;
+        height: 286px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .about-p{
+        font-size: 22px;
+        width: 350px;
+        margin-left: 25px;
+    } 
+}
