@@ -288,3 +288,32 @@ textarea{
         font-family: Arial, Helvetica, sans-serif;
     }
 }
+@media  screen and (max-width: 430px) {
+    .about-p{
+        font-size: 25px;
+        width: 400px;
+        margin-left: 25px;
+    } 
+    .carousel{
+        width: 430px;
+        height: 22vh;
+        position: relative; 
+     }
+     .mario-Family{
+        width: 430px;
+        height: 318px;
+        object-fit: cover;
+        object-position: center;
+    }
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container{
+        display: flex;
+        width: 45vh;
+    }
+}
